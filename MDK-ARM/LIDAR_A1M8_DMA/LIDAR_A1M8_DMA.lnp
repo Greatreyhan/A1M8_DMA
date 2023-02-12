@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"lidar_a1m8_dma\startup_stm32f407xx.o"
+"lidar_a1m8_dma\main.o"
+"lidar_a1m8_dma\stm32f4xx_it.o"
+"lidar_a1m8_dma\stm32f4xx_hal_msp.o"
+"lidar_a1m8_dma\rplidara1.o"
+"lidar_a1m8_dma\stm32f4xx_hal_tim.o"
+"lidar_a1m8_dma\stm32f4xx_hal_tim_ex.o"
+"lidar_a1m8_dma\stm32f4xx_hal_rcc.o"
+"lidar_a1m8_dma\stm32f4xx_hal_rcc_ex.o"
+"lidar_a1m8_dma\stm32f4xx_hal_flash.o"
+"lidar_a1m8_dma\stm32f4xx_hal_flash_ex.o"
+"lidar_a1m8_dma\stm32f4xx_hal_flash_ramfunc.o"
+"lidar_a1m8_dma\stm32f4xx_hal_gpio.o"
+"lidar_a1m8_dma\stm32f4xx_hal_dma_ex.o"
+"lidar_a1m8_dma\stm32f4xx_hal_dma.o"
+"lidar_a1m8_dma\stm32f4xx_hal_pwr.o"
+"lidar_a1m8_dma\stm32f4xx_hal_pwr_ex.o"
+"lidar_a1m8_dma\stm32f4xx_hal_cortex.o"
+"lidar_a1m8_dma\stm32f4xx_hal.o"
+"lidar_a1m8_dma\stm32f4xx_hal_exti.o"
+"lidar_a1m8_dma\stm32f4xx_hal_uart.o"
+"lidar_a1m8_dma\system_stm32f4xx.o"
+--strict --scatter "LIDAR_A1M8_DMA\LIDAR_A1M8_DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LIDAR_A1M8_DMA.map" -o LIDAR_A1M8_DMA\LIDAR_A1M8_DMA.axf
